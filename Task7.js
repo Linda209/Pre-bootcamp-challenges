@@ -1,25 +1,24 @@
 
-var cels =50;
-var fahre =0;
+var Celsius = 50;
+var Fahrenheit = 0;
 //declare funtion
-function Fahrenheit(cels){
+function CalculateFahrenheit(Celsius) {
 
-    //calculating Fahrenheit using formula
-fahre = cels*9/5+32;
+  //calculating Fahrenheit using formula
+  Fahrenheit = Celsius * 9 / 5 + 32;
 
-
-//concating and returning
-return cels+" =  "+fahre +" temperature in Fahrenheit";
+  //concating and returning
+  return Celsius + " =  " + Fahrenheit + " temperature in Fahrenheit";
 
 }
 
 //declare funtion
-function Celsius(cels){
+function CalculateCelsius(Celsius) {
 
-   // calculating Celsius using formula
- fahre = 5/9*(cels-32);
-return  cels+" =  "+fahre +" temperature in Celsius";
+  // calculating Celsius using formula
+  Fahrenheit = 5 / 9 * (Celsius - 32);
+  return Celsius + " =  " + Fahrenheit + " temperature in Celsius";
 
 }
-console.log(Celsius(cels));
-console.log(Fahrenheit(cels));
+console.log(CalculateCelsius(Celsius));
+console.log(CalculateFahrenheit(Celsius));
